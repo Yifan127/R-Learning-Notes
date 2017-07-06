@@ -113,7 +113,7 @@ The following objects are masked _by_ .GlobalEnv:
 ```
 **If there is already an object with the same name, the original object takes precedence. Therefore, attach and detach are best used when analyzing a single data frame.**
 
-with: the statements with in {} are evaluated with reference to the students data frame. \<\<\- saves the object to the global env outside of the with().
+with: the statements with in {} are evaluated with reference to the students data frame. `<<-` saves the object to the global env outside of the with().
 
 ```
 > with(students,{
