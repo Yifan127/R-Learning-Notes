@@ -13,7 +13,7 @@ fix(mydata)
 ```
 mydata <- read.table("D:/Rspace/project1/transaction.csv", header=FALSE, sep="\t")
 ```
-    * **row.names="patientID"**: specify row identifiers.
+**row.names="patientID"**: specify row identifiers.
     
 read.table() converts character variables to factors, to suppress this behavior:
 
