@@ -7,8 +7,14 @@ name <- c(Mary, Mike, Amy)
 answer <- c(TRUE,FALSE)
 ```
 * **matrix** : 2 dimension
-```
+
 matrix(vector, nrow, ncol, byrow, dimnames=list(rnames,cnames))
+
+**nrow**: number of row
+**ncol**: number of column
+**byrow**: TRUE-filled by row or FALSE-filled by column
+**rnames,cnames**: character vectors stores the row and column labels.
+```
 mymatrix <- matrix(1:6,nrow=2,ncol=3,byrow=TRUE,dimnames=list(c("R1","R2"),c("C1","C2","C3")))
 > mymatrix
    C1 C2 C3
@@ -16,13 +22,11 @@ R1  1  2  3
 R2  4  5  6
 ```
 
-**nrow**: number of row
-**ncol**: number of column
-**byrow**: TRUE-filled by row or FALSE-filled by column
-**rnames,cnames**: character vectors stores the row and column labels.
 * **array**: more than 2 dimension
-```
 array(vector, dimensions, dimnames=list(dim1name, dim2name,dim3name))
+
+**dimensions**: numeric vector giving the max index for each dimension
+```
 dim1 <- c("A1","A2")
 dim2 <- c("B1","B2","B3")
 dim3 <- c("C1","C2","C3","C4")
