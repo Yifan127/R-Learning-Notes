@@ -1,13 +1,19 @@
 <h3>Data Structure</h3>
 
 * vecter: 1 dimension
-'''
-x <- c(1,2,3)
-'''
+```
+age <- c(11,21,31)
+name <- c(Mary, Mike, Amy)
+```
 * matrix : 2 dimension
-'''
-mymatrix <- matrix(vector, nrow, ncol, byrow, dimnames=list(rnames,cnames))
-'''
+```
+matrix(vector, nrow, ncol, byrow, dimnames=list(rnames,cnames))
+mymatrix <- matrix(1:6,nrow=2,ncol=3,byrow=TRUE,dimnames=list(c("R1","R2"),c("C1","C2","C3")))
+> mymatrix
+   C1 C2 C3
+R1  1  2  3
+R2  4  5  6
+```
 nrow: number of row
 ncol: number of column
 byrow: TRUE-filled by row or FALSE-filled by column
