@@ -84,6 +84,8 @@ students <- data.frame(name,age,answer)
 1 Mary  11   TRUE
 2 Mike  21  FALSE
 3  Amy  31   TRUE
+> students$age
+[1] 11 21 31
 ```
 
 
