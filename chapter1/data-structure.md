@@ -33,19 +33,16 @@ myarray <- array(1:24,c(2,3,4),dimnames=list(dim1,dim2,dim3))
    B1 B2 B3
 A1  1  3  5
 A2  2  4  6
-
 , , C2
 
    B1 B2 B3
 A1  7  9 11
 A2  8 10 12
-
 , , C3
 
    B1 B2 B3
 A1 13 15 17
 A2 14 16 18
-
 , , C4
 
    B1 B2 B3
