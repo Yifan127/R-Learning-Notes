@@ -5,5 +5,5 @@
   * [Vector](chapter1/data-structure.md)
   * [Matrix](chapter1/matrix.md)
   * [Array](chapter1/array.md)
-  * Data Frame
+  * [Data Frame](chapter1/data-frame.md)
 
