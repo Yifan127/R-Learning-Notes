@@ -97,6 +97,20 @@ students <- data.frame(name,age,answer)
 2  21  FALSE
 3  31   TRUE
 ```
+**attach(),detach(),with()**
+
+attach/detach: add/remove the data frame to the R search path. 
+summary(age) equals to summary(students$age)
+```
+> attach(students)
+The following objects are masked _by_ .GlobalEnv:
+
+    age, answer, name
+> summary(age)  
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+     11      16      21      21      26      31 
+> detach(students)
+```
 
 
 
