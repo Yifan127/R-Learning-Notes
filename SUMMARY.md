@@ -1,3 +1,6 @@
-# Table of content
+# Summary
 
-* [First Chapter](chapter1.md)
+* [Introduction](README.md)
+* [Ch1 Dataset](chapter1.md)
+  * [Data Structure](chapter1/data-structure.md)
+
