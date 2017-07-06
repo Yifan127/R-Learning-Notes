@@ -111,6 +111,21 @@ The following objects are masked _by_ .GlobalEnv:
      11      16      21      21      26      31 
 > detach(students)
 ```
+**If there is already an object with the same name, the original object takes precedence. Therefore, attach and detach are best used when analyzing a single data frame.**
+
+with: the statements with in {} are evaluated with reference to the students data frame. \<\<\- saves the object to the global env outside of the with().
+
+```
+> with(students,{
++ nokeep <- summary(age)
++ keep <<- summary(age)
++ })
+> nokeep
+Error: object 'nokeep' not found
+> keep
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+     11      16      21      21      26      31 
+```
 
 
 
