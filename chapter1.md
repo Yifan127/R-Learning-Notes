@@ -11,6 +11,9 @@
     * detach
     * with
 * List
+* Factor
+* edit()
+* read.table()
 
 
 
