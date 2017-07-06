@@ -16,9 +16,5 @@ answer <- c(TRUE,FALSE,TRUE)
 
 
 
-**Above three structures can only have one type: numeric, charactor or logical**
-
-
-
 
  
