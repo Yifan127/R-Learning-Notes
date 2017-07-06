@@ -1,4 +1,4 @@
-<h3>matrix</h3> 
+### Matrix 
 
 2 dimensions
 matrix(vector, nrow, ncol, byrow, dimnames=list(rnames,cnames))

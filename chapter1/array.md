@@ -1,4 +1,4 @@
-<h3>array</h3>
+### Array
 
 more than 2 dimensions
 array(vector, dimensions, dimnames=list(dim1name, dim2name,dim3name))
