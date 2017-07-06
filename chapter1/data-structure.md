@@ -77,6 +77,7 @@ A2 20 22 24
 
 **Above three structures can only have one type: numeric, charactor or logical**
 * data frame
+
 ```
 students <- data.frame(name,age,answer)
 > students
@@ -86,6 +87,16 @@ students <- data.frame(name,age,answer)
 3  Amy  31   TRUE
 > students$age
 [1] 11 21 31
+> students[1:2]
+  name age
+1 Mary  11
+2 Mike  21
+3  Amy  31
+> students[c(2,3)]
+  age answer
+1  11   TRUE
+2  21  FALSE
+3  31   TRUE
 ```
 
 
