@@ -76,8 +76,7 @@ A2 20 22 24
 ```
 
 **Above three structures can only have one type: numeric, charactor or logical**
-* data frame
-
+* data frame: Different columns can have different type of data
 ```
 students <- data.frame(name,age,answer)
 > students
