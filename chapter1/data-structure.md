@@ -1,9 +1,13 @@
 <h3>Data Structure</h3>
 
 * vecter: 1 dimension
+'''
 x <- c(1,2,3)
+'''
 * matrix : 2 dimension
+'''
 mymatrix <- matrix(vector, nrow, ncol, byrow, dimnames=list(rnames,cnames))
+'''
 nrow: number of row
 ncol: number of column
 byrow: TRUE-filled by row or FALSE-filled by column
