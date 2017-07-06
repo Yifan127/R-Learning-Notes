@@ -3,8 +3,14 @@
 * **vecter**: 1 dimension
 ```
 age <- c(11,21,31)
-name <- c(Mary, Mike, Amy)
-answer <- c(TRUE,FALSE)
+name <- c("Mary", "Mike", "Amy")
+answer <- c(TRUE,FALSE,TRUE)
+> age[1]
+[1] 11
+> age[c(1,2)]
+[1] 11 21
+> age[1:3]
+[1] 11 21 31
 ```
 * **matrix** : 2 dimension
 
@@ -20,6 +26,21 @@ mymatrix <- matrix(1:6,nrow=2,ncol=3,byrow=TRUE,dimnames=list(c("R1","R2"),c("C1
    C1 C2 C3
 R1  1  2  3
 R2  4  5  6
+> mymatrix[2,]
+C1 C2 C3 
+ 4  5  6 
+> mymatrix[,2]
+R1 R2 
+ 2  5 
+> mymatrix[1,2]
+[1] 2
+> mymatrix[1,c(2,3)]
+C2 C3 
+ 2  3 
+> mymatrix[1,1:2]
+C1 C2 
+ 1  2 
+
 ```
 
 * **array**: more than 2 dimension
@@ -55,8 +76,15 @@ A2 20 22 24
 ```
 
 **Above three structures can only have one type: numeric, charactor or logical**
-* data.frame 
-
+* data frame
+```
+students <- data.frame(name,age,answer)
+> students
+  name age answer
+1 Mary  11   TRUE
+2 Mike  21  FALSE
+3  Amy  31   TRUE
+```
 
 
 
