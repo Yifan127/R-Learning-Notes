@@ -13,7 +13,7 @@
 * **lwd**: line width
 * **pch**: point symbol
 * **bg**: background color
-* **cex**: point symbol size
+* **cex**: point symbol, text size
 * **cex.axis**: axis text size
 * **font**: specify the font
 * **font.axis**: axis text font
