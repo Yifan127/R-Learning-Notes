@@ -16,3 +16,4 @@
 > legend("topleft",inset=.05,title="Drug Type",c("A","B"),lty=c(1,2),pch=c(15,17),col=c("red","blue"))
 > par(opar)
 ```
+![](/ch2-graphs/legend.PNG)

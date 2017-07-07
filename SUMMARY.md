@@ -14,4 +14,5 @@
   * [Color](ch2-graphs/color.md)
   * [Custom Axes](ch2-graphs/custom-axis.md)
   * [Legend](ch2-graphs/legend.md)
+  * [Text Annotation](ch2-graphs/text-annotation.md)
 

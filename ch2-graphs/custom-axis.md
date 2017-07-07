@@ -10,6 +10,9 @@
 * **tck**: length of each tick marks. negative=outside the graph, positive=inside, 0=suppress, 1=create gridlines
 
 ```
+> x <- c(1:10)
+> y <- x
+> z <- 10/x
 > opar <- par(no.readonly=TRUE)
 > par(mar=c(5,4,4,8)+0.1)
 > plot(x,y,type="b",pch=21,col="red",yaxt="n",lty=3,ann=FALSE)
@@ -20,6 +23,8 @@
 > title("An Example of Creative Axes", xlab="X values", ylab="Y=X")
 > par(opar)
 ```
+![](/ch2-graphs/customaxis.PNG)
+
 * **minor tick marks**
 
 add one minor tick mark between each major tick mark on the xaxis, and two minor tick mark between each major tick mark on the yaxis, and minor tick marks will be 50% as long as the major tick marks. 
