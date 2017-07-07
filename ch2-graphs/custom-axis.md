@@ -3,6 +3,7 @@
 **axis(side,at=,labels=,las=,tck=)**
 
 * **ann=False**: suppress default title and axis labels
+* **xaxt="n", yaxt="n"**: suppress x,y axis
 * **side**: 1=bottom, 2=left, 3=top, 4=right
 * **at**: numeric vector indicating the tick marks
 * **las**: specify the label. 0=parallel, 2=perpendicular
