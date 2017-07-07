@@ -18,7 +18,16 @@
 * **lty**: line type
 * **lwd**: line width
 * **pch**: point symbol
-* **cex**: point symbol size
+* **cex**: point symbol/text size
+* **font**: specify the font
+* **family**: font family
+* **pin**: plot (width, height) in inches.
+* **mai**: numeric vector indicating margin size in inches.(bottom, left, top, right)
+* **mar**: margin size in lines.
+```
+par(pin=c(4,3),mai=c(1,.5,1,.2))
+```
+
 
 **Color**
 * **RColorBrewer**
