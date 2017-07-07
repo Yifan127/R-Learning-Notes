@@ -48,7 +48,8 @@
     * Example2:
     ```
     > plot(dose,drugA,type="b",col="red",lty=2,pch=2,lwd=2, 
-    main="Clinical Trials for Drug A", sub="This is hypothetical data", xlab="Dosage", ylab="Drug Response", xlim=c(0,60),ylim=c(0,70))
+    main="Clinical Trials for Drug A", sub="This is hypothetical data",
+    xlab="Dosage", ylab="Drug Response", xlim=c(0,60),ylim=c(0,70))
     ```
     
 **Color**
@@ -75,3 +76,8 @@
 > pie(rep(1,n),labels=mygrays,col=mygrays)
 ```
 
+**Title**
+```
+title(main="Clinical Trials for Drug A", col.main="red",sub="This is hypothetical data",
++ col.sub="blue",xlab="my x label", ylab="my y label",col.lab="green",cex.lab=0.75)
+```
