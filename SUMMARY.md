@@ -10,6 +10,7 @@
   * [List](chapter1/list.md)
   * [Data Input](chapter1/data-input.md)
 * [Ch2 Graphs](ch2-graphs.md)
-  * [Graphical Parameters](ch2-graphs/graphical-parameters.md)
+  * [Plot](ch2-graphs/graphical-parameters.md)
   * [Color](ch2-graphs/color.md)
+  * [Custom Axes](ch2-graphs/custom-axis.md)
 
