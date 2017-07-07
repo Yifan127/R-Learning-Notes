@@ -28,7 +28,6 @@
 par(pin=c(4,3),mai=c(1,.5,1,.2))
 ```
 
-
 **Color**
 * **RColorBrewer**
 ```
