@@ -50,5 +50,8 @@
     ```
     title(main="Clinical Trials for Drug A", col.main="red",sub="This is hypothetical data", col.sub="blue",xlab="my x label", ylab="my y label",col.lab="green",cex.lab=0.75)
     ```
+    
+    * Example4: **abline()**
+
 
 

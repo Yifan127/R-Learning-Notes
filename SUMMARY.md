@@ -13,4 +13,5 @@
   * [Plot](ch2-graphs/graphical-parameters.md)
   * [Color](ch2-graphs/color.md)
   * [Custom Axes](ch2-graphs/custom-axis.md)
+  * Legend
 
