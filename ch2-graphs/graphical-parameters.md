@@ -52,6 +52,7 @@
     ```
     
     * Example4: **abline()**
+    abline(h=yvalue, v=xvalues)
 
 
 
