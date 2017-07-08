@@ -2,13 +2,13 @@
 
 * **text(x,y,"text to place",pos,...)**
 
-place text within the graph
-**pos**: 1=below, 2=left, 3=above, 4=right
+    place text within the graph
+    **pos**: 1=below, 2=left, 3=above, 4=right
 * **mtext("text to place", side, outer=TRUE/FALSE, line=n,...)**: place text in one of the four magines
 
-**side**: 1=bottom, 2=left, 3=top, 4=right
-**outer**: outer=TRUE, use ouside margin if available
-**line**: on which margin line, starting at 0 counting outwards
+    **side**: 1=bottom, 2=left, 3=top, 4=right
+    **outer**: outer=TRUE, use ouside margin if available
+    **line**: on which margin line, starting at 0 counting outwards
 
 
 ```
