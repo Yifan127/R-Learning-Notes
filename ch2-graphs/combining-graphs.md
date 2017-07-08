@@ -32,3 +32,19 @@ the figure in bottom-right is twice the width of the figure in the bottom-left
 ```
 ![](/ch2-graphs/layout.PNG)
 
+* **fig**
+
+fig=c(x1,x2,y1,y2)
+
+```
+> opar <- par()
+> par(fig=c(0,0.8,0,0.8))
+> plot(x,y)
+> par(fig=c(0,0.8,0.55,1),new=TRUE)
+> boxplot(x,horizontal=TRUE,axes=FALSE)
+> par(fig=c(0.65,1,0,0.8),new=TRUE)
+> boxplot(y,axes=FALSE)
+> mtext("Enhanced Scatterplot", side=3, outer=TRUE, line=-3)
+> par(opar)
+```
+![](/ch2-graphs/fig.PNG)
