@@ -13,3 +13,17 @@
 > par(opar)
 ```
 ![](/ch2-graphs/combining.PNG)
+
+* **layout()**
+
+divide the device into two rows and two columns
+allocate figure 1 all of row 1
+allocate figure 2 the intersection of column 2 and row 2
+```
+> opar <- par(no.readonly=TRUE)
+> layout(matrix(c(1,1,0,2),2,2, byrow=TRUE))
+> hist(x)
+> hist(z)
+> par(opar)
+```
+![](/ch2-graphs/layout.PNG)
