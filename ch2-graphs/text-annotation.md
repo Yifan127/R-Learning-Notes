@@ -4,10 +4,11 @@
 
 place text within the graph
 **pos**: 1=below, 2=left, 3=above, 4=right
-* **mtext("text to place", side, line=n,...)**
+* **mtext("text to place", side, outer=TRUE/FALSE, line=n,...)**
 
 **side**: 1=bottom, 2=left, 3=top, 4=right
-
+**outer**: outer=TRUE, use ouside margin if available
+**line**: on which margin line, starting at 0 counting outwards
 place text in one of the four magines
 
 ```

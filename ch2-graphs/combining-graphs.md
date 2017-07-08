@@ -19,11 +19,16 @@
 divide the device into two rows and two columns
 allocate figure 1 all of row 1
 allocate figure 2 the intersection of column 2 and row 2
+the figure in row 1 is twice the height of the figure in row 2
+the figure in bottom-right is twice the width of the figure in the bottom-left
+
+* **width=lcm(5)**: absolute widths in cm
 ```
 > opar <- par(no.readonly=TRUE)
-> layout(matrix(c(1,1,0,2),2,2, byrow=TRUE))
+> layout(matrix(c(1,1,0,2),2,2, byrow=TRUE),widths=c(1,2),height=c(2,1))
 > hist(x)
 > hist(z)
 > par(opar)
 ```
 ![](/ch2-graphs/layout.PNG)
+
