@@ -12,4 +12,4 @@
 > boxplot(x, main="Boxplot of x")
 > par(opar)
 ```
- 
+![](/ch2-graphs/combining.PNG)
