@@ -23,4 +23,5 @@
   * [Date Values](date-values.md)
   * [Type Conversions](conversions.md)
   * [Sorting](sorting.md)
+  * [Merging](merging.md)
 
