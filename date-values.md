@@ -59,4 +59,10 @@
     Time difference of 1797.429 weeks
     ```
 
+* **as.character()**
+```
+> strDates <- as.character(dates)
+> strDates
+[1] "1965-01-05" "1975-08-16"
+```
 

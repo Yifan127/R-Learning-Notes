@@ -21,4 +21,5 @@
   * [Renaming Variables](renaming.md)
   * [Missing Values](missing-value.md)
   * [Date Values](date-values.md)
+  * [Type Conversions](conversions.md)
 
