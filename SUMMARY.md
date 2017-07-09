@@ -22,4 +22,5 @@
   * [Missing Values](missing-value.md)
   * [Date Values](date-values.md)
   * [Type Conversions](conversions.md)
+  * [Sorting](sorting.md)
 
