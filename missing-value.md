@@ -1,4 +1,4 @@
-### Missing Value
+### Missing Values
 
 * **is.na()** : Test for the presence of missing values.
 ```

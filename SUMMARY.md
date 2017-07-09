@@ -19,5 +19,6 @@
 * Ch3 Data Management
   * [Creating Variables](variables.md)
   * [Renaming Variables](renaming.md)
-  * [Missing Value](missing-value.md)
+  * [Missing Values](missing-value.md)
+  * [Date Values](date-values.md)
 
