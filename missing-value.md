@@ -20,5 +20,16 @@
 [1] TRUE
 ```
 
+* **na.rm=TRUE** : excluding missing values
+```
+> x <- c(1,2,NA,3)
+> y <- sum(x)
+> y
+[1] NA
+> y <- sum(x,na.rm=TRUE)
+> y
+[1] 6
+```
+
 
 
