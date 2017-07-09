@@ -1,4 +1,4 @@
-### Manipluating Variables
+### Creating Variables
 
 * **variable[condition] `<-` expression**
 
@@ -29,6 +29,7 @@ First, create variable agecat, and set to NA for each row.
 + agecat[age == 99] <- NA})
 ```
 * **transform()**
+
 ```
 > mydata <- data.frame(x1=c(2,2,6,4),x2=c(3,4,2,8))
 > mydata <- transform(mydata,sumx=x1+x2,meanx=(x1+x2)/2)
@@ -38,4 +39,14 @@ First, create variable agecat, and set to NA for each row.
 2  2  4    6   3.0
 3  6  2    8   4.0
 4  4  8   12   6.0
+```
+* **Renaming variables**
+
+```
+> names(leadership)
+[1] "age"    "agecat"
+> names(leadership)[2] <- "agecategory"
+> names(leadership)
+[1] "age"         "agecategory"
+> names(leadership)[6:10] <- c("item1", "item2", "item3", "item4","item5")
 ```

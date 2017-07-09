@@ -17,5 +17,5 @@
   * [Text Annotation](ch2-graphs/text-annotation.md)
   * [Combining Graphs](ch2-graphs/combining-graphs.md)
 * Ch3 Data Management
-  * [Variables](variables.md)
+  * [Creating Variables](variables.md)
 
