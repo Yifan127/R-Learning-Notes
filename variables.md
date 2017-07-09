@@ -5,6 +5,8 @@
 make the assignment when condition is true
 
 ```
+> age <- c(32,45,25,39,99)
+> leadership <- data.frame(age)
 > leadership$agecat[leadership$age > 75] <- "Elder"
 > leadership$agecat[leadership$age < 55] <- "Young"
 > leadership$agecat[leadership$age >= 55 & leadership$age <= 75] <- "Middle Aged"
