@@ -5,10 +5,16 @@
 make the assignment when condition is true
 
 ```
-> leadership$age[leadership$age > 75] <- "Elder"
-> leadership$age[leadership$age < 55] <- "Young"
-> leadership$age[leadership$age >= 55 & leadership$age <= 75] <- "Middle Aged"
-
+> leadership$agecat[leadership$age > 75] <- "Elder"
+> leadership$agecat[leadership$age < 55] <- "Young"
+> leadership$agecat[leadership$age >= 55 & leadership$age <= 75] <- "Middle Aged"
+> leadership
+  age agecat
+1  32  Young
+2  45  Young
+3  25  Young
+4  39  Young
+5  NA   <NA>
 ```
 * **transform()**
 ```
