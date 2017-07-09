@@ -34,11 +34,18 @@
 > date()
 [1] "Sun Jul 09 21:14:53 2017"
 ```
-
 * **format()**
 ```
 > format(today, format="%B %d %Y")
 [1] "July 09 2017"
 > format(today, format="%A")
 [1] "Sunday"
+```
+* **operation**
+```
+> startdate <- as.Date("2007-03-09")
+> enddate <- as.Date("2017-03-09")
+> days <- enddate-startdate
+> days
+Time difference of 3653 days
 ```
