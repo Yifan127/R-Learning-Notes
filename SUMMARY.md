@@ -18,5 +18,6 @@
   * [Combining Graphs](ch2-graphs/combining-graphs.md)
 * Ch3 Data Management
   * [Creating Variables](variables.md)
-  * [Renaming](renaming.md)
+  * [Renaming Variables](renaming.md)
+  * [Missing Value](missing-value.md)
 
