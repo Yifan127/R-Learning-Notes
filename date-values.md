@@ -36,16 +36,27 @@
 ```
 * **format()**
 ```
+> today <- Sys.Date()
 > format(today, format="%B %d %Y")
 [1] "July 09 2017"
 > format(today, format="%A")
 [1] "Sunday"
 ```
-* **operation**
-```
-> startdate <- as.Date("2007-03-09")
-> enddate <- as.Date("2017-03-09")
-> days <- enddate-startdate
-> days
-Time difference of 3653 days
-```
+* **difftime**
+    * example1:
+    ```
+    > startdate <- as.Date("2007-03-09")
+    > enddate <- as.Date("2017-03-09")
+    > days <- enddate-startdate
+    > days
+    Time difference of 3653 days
+    ```   
+    * example2:
+    units can be seconds, minutes, hours, days, or weeks.
+    ```
+    > dob <- as.Date("1983-01-27")
+    > difftime(today,dob,units="weeks")
+    Time difference of 1797.429 weeks
+    ```
+
+
