@@ -42,13 +42,4 @@ First, create variable agecat, and set to NA for each row.
 3  6  2    8   4.0
 4  4  8   12   6.0
 ```
-* **Renaming variables**
 
-```
-> names(leadership)
-[1] "age"    "agecat"
-> names(leadership)[2] <- "agecategory"
-> names(leadership)
-[1] "age"         "agecategory"
-> names(leadership)[6:10] <- c("item1", "item2", "item3", "item4","item5")
-```
