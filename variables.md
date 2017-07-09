@@ -16,6 +16,18 @@ make the assignment when condition is true
 4  39  Young
 5  NA   <NA>
 ```
+* **within()**
+
+within() is similar to with(), it allows you to modify the data frame.
+First, create variable agecat, and set to NA for each row.
+```
+> leadership <- within(leadership,{
++ agecat <- NA
++ agecat[age > 75] <- "Elder"
++ agecat[age >= 55 & age <= 75] <- "Middle Aged"
++ agecat[age < 55] <- "Young"
++ agecat[age == 99] <- NA})
+```
 * **transform()**
 ```
 > mydata <- data.frame(x1=c(2,2,6,4),x2=c(3,4,2,8))
