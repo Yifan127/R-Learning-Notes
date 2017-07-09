@@ -31,5 +31,23 @@
 [1] 6
 ```
 
+* **na.omit()** : deletes any rows with missing data
+```
+> leadership
+  manager     date country gender age q1 q2 q3 q4 q5 stringAsFactor
+1       1 10/24/08      US      M  32  5  4  5  5  5          FALSE
+2       2 10/28/08      US      F  45  3  5  2  5  5          FALSE
+3       3  10/1/08      UK      F  25  3  5  5  5  2          FALSE
+4       4 10/12/08      UK      M  39  3  3  4 NA NA          FALSE
+5       5   5/1/09      UK      F  99  2  2  1  2  1          FALSE
+> newdata <- na.omit(leadership)
+> newdata
+  manager     date country gender age q1 q2 q3 q4 q5 stringAsFactor
+1       1 10/24/08      US      M  32  5  4  5  5  5          FALSE
+2       2 10/28/08      US      F  45  3  5  2  5  5          FALSE
+3       3  10/1/08      UK      F  25  3  5  5  5  2          FALSE
+5       5   5/1/09      UK      F  99  2  2  1  2  1          FALSE
+```
+
 
 
