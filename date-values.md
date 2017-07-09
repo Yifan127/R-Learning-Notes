@@ -27,3 +27,18 @@
     4       4 2008-10-12      UK      M  39  3  3  4 NA NA          FALSE
     5       5 2009-05-01      UK      F  99  2  2  1  2  1          FALSE
     ```
+* **System Date**
+```
+> Sys.Date()
+[1] "2017-07-09"
+> date()
+[1] "Sun Jul 09 21:14:53 2017"
+```
+
+* **format()**
+```
+> format(today, format="%B %d %Y")
+[1] "July 09 2017"
+> format(today, format="%A")
+[1] "Sunday"
+```
