@@ -1,5 +1,15 @@
-### Variables
+### Manipluating Variables
 
+* **variable[condition] `<-` expression**
+
+make the assignment when condition is true
+
+```
+> leadership$age[leadership$age > 75] <- "Elder"
+> leadership$age[leadership$age < 55] <- "Young"
+> leadership$age[leadership$age >= 55 & leadership$age <= 75] <- "Middle Aged"
+
+```
 * **transform()**
 ```
 > mydata <- data.frame(x1=c(2,2,6,4),x2=c(3,4,2,8))
