@@ -37,3 +37,17 @@
   4       4 2008-10-12      UK      M  39  3  3 NA          FALSE
   5       5 2009-05-01      UK      F  99  2  2  1          FALSE
   ```
+* **Selecting observations**
+```
+> newdata <- leadership[leadership$gender == "M" & leadership$age > 30,]
+> newdata
+  manager       date country gender age q1 q2 q3 q4 q5
+1       1 2008-10-24      US      M  32  5  4  5  5  5
+4       4 2008-10-12      UK      M  39  3  3  4 NA NA
+> startdate <- as.Date("2009-01-01")
+> enddate <- as.Date("2009-12-31")
+> newdata <- leadership[leadership$date >= startdate & leadership$date <= enddate,]
+> newdata
+  manager       date country gender age q1 q2 q3 q4 q5
+5       5 2009-05-01      UK      F  99  2  2  1  2  1
+```
