@@ -24,4 +24,5 @@
   * [Type Conversions](conversions.md)
   * [Sorting](sorting.md)
   * [Merging](merging.md)
+  * [Subsetting](subsetting.md)
 
