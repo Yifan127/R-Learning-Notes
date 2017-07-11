@@ -25,4 +25,6 @@
   * [Sorting](sorting.md)
   * [Merging](merging.md)
   * [Subsetting](subsetting.md)
+* [Ch4 Advanced Data Management](ch4-advanced-data-management.md)
+  * [Numerical functions](ch4-advanced-data-management/numerical-functions.md)
 
