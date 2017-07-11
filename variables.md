@@ -42,4 +42,13 @@ First, create variable agecat, and set to NA for each row.
 3  6  2    8   4.0
 4  4  8   12   6.0
 ```
+* **dim()** : return the row and column numbers of a data frame
+```
+> dim(leadership)
+[1]  5 10
+```
+
+
+
+
 
