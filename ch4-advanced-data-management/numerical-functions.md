@@ -20,4 +20,3 @@ newdata <- transform(mydata, myvar = scale(myvar) * SD + M
 > runif(5)
 [1] 0.06936092 0.81777520 0.94262173 0.26938188 0.16934812
 ```
-* **
