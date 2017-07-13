@@ -21,3 +21,8 @@
 > grep("A",c("b","A","c"),fixed=TRUE)
 [1] 2
 ```
+* **sub(pattern,replacement,x,ignore.case=FALSE,fixed=FALSE)**
+```
+> sub("\\s",".","Hello World")
+[1] "Hello.World"
+```
