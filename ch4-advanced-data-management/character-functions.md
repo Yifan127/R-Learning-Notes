@@ -16,3 +16,8 @@
 > x
 [1] "ab"   "cde"  "f222"
 ```
+* **grep(pattern,x,ignore.case=FALSE,fixed=FALSE)** : 
+```
+> grep("A",c("b","A","c"),fixed=TRUE)
+[1] 2
+```
