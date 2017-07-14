@@ -44,3 +44,9 @@ paste("x",1:3,sep="M")
 > tolower(x)
 [1] "a" "b" "c"
 ```
+* **cat(...,file="myfile",append=FALSE)** : concatenates the objects in ... and outputs them to the screen or to a file.
+```
+> cat("Hello",name, "\b.\n", "Isn\'t R", "\t", "Great?\n")
+Hello Jane.
+ Isn't R 	 Great?
+```
