@@ -26,3 +26,21 @@
 > sub("\\s",".","Hello World")
 [1] "Hello.World"
 ```
+* **strsplit(x,split,fixed=FALSE)**
+```
+> strsplit("abc","")
+[[1]]
+[1] "a" "b" "c"
+```
+* **paste()**
+```
+paste("x",1:3,sep="M")
+[1] "xM1" "xM2" "xM3"
+```
+* **toupper() tolower()**
+```
+> toupper(x)
+[1] "A" "B" "C"
+> tolower(x)
+[1] "a" "b" "c"
+```
