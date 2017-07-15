@@ -29,4 +29,5 @@
   * [Numerical functions](ch4-advanced-data-management/numerical-functions.md)
   * [Character functions](ch4-advanced-data-management/character-functions.md)
   * [Function practise](ch4-advanced-data-management/function-practise.md)
+  * [Control flow](ch4-advanced-data-management/control-flow.md)
 
