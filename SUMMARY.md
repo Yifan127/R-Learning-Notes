@@ -30,4 +30,5 @@
   * [Character functions](ch4-advanced-data-management/character-functions.md)
   * [Function practise](ch4-advanced-data-management/function-practise.md)
   * [Control flow](ch4-advanced-data-management/control-flow.md)
+  * [Aggregation and reshamping](ch4-advanced-data-management/aggregation-and-reshamping.md)
 
