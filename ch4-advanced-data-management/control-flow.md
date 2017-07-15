@@ -9,7 +9,6 @@
     * **ifelse(cond,statement1,statement2)**
     * **switch(expr, statement)**
 * User-Written Function
-
 ```
 myfunction <- function(arg1,arg2){
       statements
