@@ -35,3 +35,66 @@ hp         110           110         93            110               175
   7       6       5 19.7   6  145 175 3.62 2.77 15.5 0.0 1.00    5 6.00
   8       8       5 15.4   8  326 300 3.88 3.37 14.6 0.0 1.00    5 6.00
   ```
+* **melt(data,id=c())**
+```
+> library(reshape2)
+> ID <- c(1,1,2,2)
+> Time <- c(1,2,1,2)
+> X1 <- c(5,3,6,2)
+> X2 <- c(6,5,1,4)
+> mydata <- data.frame(ID,Time,X1,X2)
+> mydata
+  ID Time X1 X2
+1  1    1  5  6
+2  1    2  3  5
+3  2    1  6  1
+4  2    2  2  4
+> md <- melt(mydata,id=c("ID","Time"))
+> md
+  ID Time variable value
+1  1    1       X1     5
+2  1    2       X1     3
+3  2    1       X1     6
+4  2    2       X1     2
+5  1    1       X2     6
+6  1    2       X2     5
+7  2    1       X2     1
+8  2    2       X2     4
+```
+* **dcast()**
+```
+> newdata <- dcast(md,ID~variable,mean)
+> newdata
+  ID X1  X2
+1  1  4 5.5
+2  2  4 2.5
+> newdata <- dcast(md,Time~variable,mean)
+> newdata
+  Time  X1  X2
+1    1 5.5 3.5
+2    2 2.5 4.5
+> newdata <- dcast(md,ID~Time,mean)
+> newdata
+  ID   1 2
+1  1 5.5 4
+2  2 3.5 3
+> newdata <- dcast(md,ID+Time~variable,mean)
+> newdata
+  ID Time X1 X2
+1  1    1  5  6
+2  1    2  3  5
+3  2    1  6  1
+4  2    2  2  4
+> newdata <- dcast(md,ID+variable~Time,mean)
+> newdata
+  ID variable 1 2
+1  1       X1 5 3
+2  1       X2 6 5
+3  2       X1 6 2
+4  2       X2 1 4
+> newdata <- dcast(md,ID~variable+Time,mean)
+> newdata
+  ID X1_1 X1_2 X2_1 X2_2
+1  1    5    3    6    5
+2  2    6    2    1    4
+```
