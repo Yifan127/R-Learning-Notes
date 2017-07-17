@@ -11,7 +11,7 @@
 > barplot(counts,main="simple bar plot",xlab="improvement", ylab="frequency")
 > barplot(counts,main="simple bar plot",xlab="improvement", ylab="frequency", horiz=TRUE)
 ```
-![](/ch5-basic-graphs/simple bar chart.PNG)
+![](/ch5-basic-graphs/simple bar plot.PNG)
 * **barplot matrix**
 ``` 
 > counts <- table(Arthritis$Improved,Arthritis$Treatment)
