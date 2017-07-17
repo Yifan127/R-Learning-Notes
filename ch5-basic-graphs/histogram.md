@@ -2,7 +2,7 @@
 
 * **hist()**
 * **rug()** : one dimensional representation of the actual data values.
-* **jitter()**: add a small random value to each data, in order to avoid overlapping points.
+* **jitter() for ties**: add a small random value to each data, in order to avoid overlapping points.
 
 ```
 > par(mfrow=c(2,2))
