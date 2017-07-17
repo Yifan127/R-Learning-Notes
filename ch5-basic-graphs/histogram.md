@@ -2,6 +2,7 @@
 
 * **hist()**
 * **rug()** : one dimensional representation of the actual data values.
+* **jitter()**: add a small random value to each data, in order to avoid overlapping points.
 
 ```
 > par(mfrow=c(2,2))
@@ -10,7 +11,7 @@
 > hist(mtcars$mpg,breaks = 12,col="red",xlab="Miles per gallon",main="Colored histogram with 12 bins")
 
 > hist(mtcars$mpg,freq=FALSE,breaks = 12,col="red",xlab="Miles per gallon",main="Histogram, rug plot, density curve")
-> rug(jitter(mtcars$mpg))
+> rug(jitter(mtcars$mpg,amount=0.01))
 > lines(density(mtcars$mpg),col="blue",lwd=2)
 
 > x <- mtcars$mpg
