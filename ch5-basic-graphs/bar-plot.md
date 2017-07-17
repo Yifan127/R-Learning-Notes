@@ -1,6 +1,6 @@
 ### Bar plot
 
-* **barplot vector**
+* **barplot() vector**
 ```
 > library(vcd)
 > counts <- table(Arthritis$Improved)
@@ -12,7 +12,7 @@
 > barplot(counts,main="simple bar plot",xlab="improvement", ylab="frequency", horiz=TRUE)
 ```
 ![](/ch5-basic-graphs/simple bar plot.PNG)
-* **barplot matrix**
+* **barplot() matrix**
 ``` 
 > counts <- table(Arthritis$Improved,Arthritis$Treatment)
 > counts

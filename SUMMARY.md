@@ -33,4 +33,5 @@
   * [Aggregation and reshamping](ch4-advanced-data-management/aggregation-and-reshamping.md)
 * [Ch5 Basic Graphs](ch5-basic-graphs/ch5-basic-graphs.md)
   * [Bar plot](ch5-basic-graphs/bar-plot.md)
+  * [Pie chart](ch5-basic-graphs/pie-chart.md)
 
