@@ -45,3 +45,4 @@
 > barplot(means$x,names.arg = means$Group.1)
 > title("mean illiteracy rate")
 ```
+![](/ch5-basic-graphs/mean bar plot.PNG)
