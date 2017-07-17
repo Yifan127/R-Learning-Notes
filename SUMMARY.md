@@ -16,7 +16,7 @@
   * [Legend](ch2-graphs/legend.md)
   * [Text Annotation](ch2-graphs/text-annotation.md)
   * [Combining Graphs](ch2-graphs/combining-graphs.md)
-* Ch3 Data Management
+* [Ch3 Data Management](ch3-data-management.md)
   * [Creating Variables](variables.md)
   * [Renaming Variables](renaming.md)
   * [Missing Values](missing-value.md)
@@ -31,4 +31,6 @@
   * [Function practise](ch4-advanced-data-management/function-practise.md)
   * [Control flow](ch4-advanced-data-management/control-flow.md)
   * [Aggregation and reshamping](ch4-advanced-data-management/aggregation-and-reshamping.md)
+* [Ch5 Basic Graphs](ch5-basic-graphs.md)
+  * [Bar plot](ch5-basic-graphs/bar-plot.md)
 
