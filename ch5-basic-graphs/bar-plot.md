@@ -11,7 +11,7 @@
 > barplot(counts,main="simple bar plot",xlab="improvement", ylab="frequency")
 > barplot(counts,main="simple bar plot",xlab="improvement", ylab="frequency", horiz=TRUE)
 ```
-![](/assets/simple bar chart.PNG)
+![](/ch5-basic-graphs/simple bar chart.PNG)
 * **barplot matrix**
 ``` 
 > counts <- table(Arthritis$Improved,Arthritis$Treatment)
@@ -24,7 +24,7 @@
 > barplot(counts,main="stacked bar plot",xlab="treatment", ylab="frequency",col=c("red","yellow","green"),legend=rownames(counts))
 > barplot(counts,main="grouped bar plot",xlab="treatment", ylab="frequency",col=c("red","yellow","green"),legend=rownames(counts),beside=TRUE)
 ```
-![](/assets/stacked grouped bar plot.PNG)
+![](/ch5-basic-graphs/stacked grouped bar plot.PNG)
 * **mean barplot**
 ```
 > states <- data.frame(state.region,state.x77)
