@@ -36,4 +36,5 @@
   * [Pie chart](ch5-basic-graphs/pie-chart.md)
   * [Histogram](ch5-basic-graphs/histogram.md)
   * [Kernel density plot](ch5-basic-graphs/kernel-density-plot.md)
+  * [Box plot](ch5-basic-graphs/box-plot.md)
 
