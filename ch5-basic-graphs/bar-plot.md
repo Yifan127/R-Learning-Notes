@@ -54,3 +54,10 @@
 > barplot(counts,main="treatment outcome",horiz=TRUE,cex.names = 0.8, names.arg = c("no improvement","some improvement","marked improvement"))
 ```
 ![](/ch5-basic-graphs/tweaking bar plot.PNG)
+* **spinogram**
+
+rescales a stacked bar plot, the height of each bar is 1, and the segment heights represent proportions.
+```
+> counts <- table(Arthritis$Treatment,Arthritis$Improved)
+> spine(counts,main="spinogram example")
+```
