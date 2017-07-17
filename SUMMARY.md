@@ -34,4 +34,5 @@
 * [Ch5 Basic Graphs](ch5-basic-graphs/ch5-basic-graphs.md)
   * [Bar plot](ch5-basic-graphs/bar-plot.md)
   * [Pie chart](ch5-basic-graphs/pie-chart.md)
+  * [Histogram](ch5-basic-graphs/histogram.md)
 
