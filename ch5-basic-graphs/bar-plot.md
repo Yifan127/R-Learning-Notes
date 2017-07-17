@@ -46,3 +46,11 @@
 > title("mean illiteracy rate")
 ```
 ![](/ch5-basic-graphs/mean bar plot.PNG)
+* **tweaking bar plot**
+```
+> par(mar=c(5,8,4,2))
+> par(las=2)
+> counts <- table(Arthritis$Improved)
+> barplot(counts,main="treatment outcome",horiz=TRUE,cex.names = 0.8, names.arg = c("no improvement","some improvement","marked improvement"))
+```
+![](/ch5-basic-graphs/tweaking bar plot.PNG)
