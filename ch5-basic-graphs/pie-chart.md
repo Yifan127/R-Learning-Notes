@@ -29,4 +29,12 @@
     > pie(mytable,labels = lbls3,main="pie chart from a table\n (with sample sizes)")
     ```
 ![](/ch5-basic-graphs/pie chart.PNG)   
+
+* **fan.plot()**
+```
+> fan.plot(slices,labels = lbls,main="fan plot")
+```
+![](/ch5-basic-graphs/fan plot.PNG)   
+
+
  
