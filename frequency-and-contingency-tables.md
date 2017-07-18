@@ -1,7 +1,7 @@
 ### Frequency and contingency tables
 
 * **One-Way Tables**
-  * **table()** : **useNA="ifany"**
+  * **table()** : **useNA="ifany"** to include NA as a valid category.
   * **prop.table()**
   ```
   > library(vcd)
