@@ -43,4 +43,4 @@
   * [Descriptive statistics](ch6-basic-statistics/descriptive-statistics.md)
   * [Frequency and contingency tables](ch6-basic-statistics/frequency-and-contingency-tables.md)
   * [Test of independence](ch6-basic-statistics/test-of-independence.md)
-
+* 
