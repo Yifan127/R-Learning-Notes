@@ -39,7 +39,7 @@
   * [Box plot](ch5-basic-graphs/box-plot.md)
   * [Violin plot](ch5-basic-graphs/violin-plot.md)
   * [Dot plot](ch5-basic-graphs/dot-plot.md)
-* [Ch6 Basic Statistics](ch6-basic-statistics.md)
+* [Ch6 Basic Statistics](ch6-basic-statistics/ch6-basic-statistics.md)
   * [Descriptive statistics](ch6-basic-statistics/descriptive-statistics.md)
   * [Frequency and contingency tables](ch6-basic-statistics/frequency-and-contingency-tables.md)
   * [Test of independence](ch6-basic-statistics/test-of-independence.md)
