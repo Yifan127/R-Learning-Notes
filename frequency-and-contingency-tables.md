@@ -1,7 +1,7 @@
 ### Frequency and contingency tables
 
 * **One-Way Tables**
-  * **table()**
+  * **table()** : **useNA="ifany"**
   * **prop.table()**
   ```
   > library(vcd)
