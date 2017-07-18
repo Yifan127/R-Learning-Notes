@@ -80,3 +80,103 @@ Treatment      None      Some    Marked
   Treated 0.3095238 0.5000000 0.7500000
   Sum     1.0000000 1.0000000 1.0000000
 ```
+* **CrossTable()**
+  ```
+  > library(gmodels)
+  > CrossTable(Arthritis$Treatment,Arthritis$Improved)
+  
+     Cell Contents
+  |-------------------------|
+  |                       N |
+  | Chi-square contribution |
+  |           N / Row Total |
+  |           N / Col Total |
+  |         N / Table Total |
+  |-------------------------|
+  
+  Total Observations in Table:  84 
+  
+                      | Arthritis$Improved 
+  Arthritis$Treatment |      None |      Some |    Marked | Row Total | 
+  --------------------|-----------|-----------|-----------|-----------|
+              Placebo |        29 |         7 |         7 |        43 | 
+                      |     2.616 |     0.004 |     3.752 |           | 
+                      |     0.674 |     0.163 |     0.163 |     0.512 | 
+                      |     0.690 |     0.500 |     0.250 |           | 
+                      |     0.345 |     0.083 |     0.083 |           | 
+  --------------------|-----------|-----------|-----------|-----------|
+              Treated |        13 |         7 |        21 |        41 | 
+                      |     2.744 |     0.004 |     3.935 |           | 
+                      |     0.317 |     0.171 |     0.512 |     0.488 | 
+                      |     0.310 |     0.500 |     0.750 |           | 
+                      |     0.155 |     0.083 |     0.250 |           | 
+  --------------------|-----------|-----------|-----------|-----------|
+         Column Total |        42 |        14 |        28 |        84 | 
+                      |     0.500 |     0.167 |     0.333 |           | 
+  --------------------|-----------|-----------|-----------|-----------|
+  ```
+* **Multi-dimensional tables**
+  * **ftable()**
+  ```
+  > mytable <- xtabs(~Treatment+Sex+Improved, data=Arthritis)
+  > mytable
+  , , Improved = None
+  
+           Sex
+  Treatment Female Male
+    Placebo     19   10
+    Treated      6    7
+  
+  , , Improved = Some
+  
+           Sex
+  Treatment Female Male
+    Placebo      7    0
+    Treated      5    2
+  
+  , , Improved = Marked
+  
+           Sex
+  Treatment Female Male
+    Placebo      6    1
+    Treated     16    5
+  
+  > ftable(mytable)
+                   Improved None Some Marked
+  Treatment Sex                             
+  Placebo   Female            19    7      6
+            Male              10    0      1
+  Treated   Female             6    5     16
+            Male               7    2      5
+  > margin.table(mytable,1)
+  Treatment
+  Placebo Treated 
+       43      41 
+  > margin.table(mytable,2)
+  Sex
+  Female   Male 
+      59     25 
+  > margin.table(mytable,3)
+  Improved
+    None   Some Marked 
+      42     14     28 
+  > margin.table(mytable,c(1,3))
+           Improved
+  Treatment None Some Marked
+    Placebo   29    7      7
+    Treated   13    7     21
+  > ftable(prop.table(mytable,c(1,2)))
+                   Improved       None       Some     Marked
+  Treatment Sex                                             
+  Placebo   Female          0.59375000 0.21875000 0.18750000
+            Male            0.90909091 0.00000000 0.09090909
+  Treated   Female          0.22222222 0.18518519 0.59259259
+            Male            0.50000000 0.14285714 0.35714286
+  > ftable(addmargins(prop.table(mytable,c(1,2)),3))
+                   Improved       None       Some     Marked        Sum
+  Treatment Sex                                                        
+  Placebo   Female          0.59375000 0.21875000 0.18750000 1.00000000
+            Male            0.90909091 0.00000000 0.09090909 1.00000000
+  Treated   Female          0.22222222 0.18518519 0.59259259 1.00000000
+            Male            0.50000000 0.14285714 0.35714286 1.00000000
+  ```
