@@ -38,4 +38,5 @@
   * [Kernel density plot](ch5-basic-graphs/kernel-density-plot.md)
   * [Box plot](ch5-basic-graphs/box-plot.md)
   * [Violin plot](ch5-basic-graphs/violin-plot.md)
+  * [Dot plot](ch5-basic-graphs/dot-plot.md)
 
