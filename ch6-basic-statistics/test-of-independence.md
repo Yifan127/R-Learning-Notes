@@ -35,3 +35,16 @@
   data:  mytable
   X-squared = 4.8407, df = 2, p-value = 0.08889
   ```
+* **assocstats**
+
+In general, large magnitudes indicate stronger associations.
+```
+> assocstats(mytable)
+                    X^2 df  P(> X^2)
+Likelihood Ratio 13.530  2 0.0011536
+Pearson          13.055  2 0.0014626
+
+Phi-Coefficient   : NA 
+Contingency Coeff.: 0.367 
+Cramer's V        : 0.394 
+```
