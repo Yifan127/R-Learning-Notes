@@ -14,3 +14,10 @@ $out
 numeric(0)
 ```
 ![](/ch5-basic-graphs/box plot.PNG)
+
+* **parallel boxplot**
+```
+boxplot(mpg~cyl,data=mtcars,main="Car mileage data",xlab="number of cylinders",ylab="miles per gallon")
+```
+![](/ch5-basic-graphs/parallelboxplot.PNG)
+
