@@ -117,6 +117,7 @@ Treatment      None      Some    Marked
   ```
 * **Multi-dimensional tables**
   * **ftable()**
+  
   ```
   > mytable <- xtabs(~Treatment+Sex+Improved, data=Arthritis)
   > mytable
