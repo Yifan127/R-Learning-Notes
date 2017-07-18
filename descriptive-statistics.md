@@ -107,3 +107,32 @@ wt     3 32   3.22  0.98   3.33    3.15  0.77  1.51   5.42   3.91 0.42    -0.02 
  skew      0.05256118   1.3598859  0.2103128
  kurtosis -1.45535200   0.5634635 -1.1737358
  ```
+* **summaryBy()**
+```
+> library(doBy)
+> summaryBy(mpg+hp+wt~am,data=mtcars,FUN=mystats)
+ am mpg.n mpg.mean mpg.stdev   mpg.skew mpg.kurtosis hp.n  hp.mean hp.stdev     hp.skew hp.kurtosis wt.n  wt.mean
+1  0    19 17.14737  3.833966 0.01395038   -0.8031783   19 160.2632 53.90820 -0.01422519  -1.2096973   19 3.768895
+2  1    13 24.39231  6.166504 0.05256118   -1.4553520   13 126.8462 84.06232  1.35988586   0.5634635   13 2.411000
+  wt.stdev   wt.skew wt.kurtosis
+1 0.7774001 0.9759294   0.1415676
+2 0.6169816 0.2103128  -1.1737358
+```
+* **describeBy()**
+ ```
+ > library(psych)
+ > describeBy(mtcars[vars],list(am=mtcars$am))
+ 
+  Descriptive statistics by group 
+ am: 0
+     vars  n   mean    sd median trimmed   mad   min    max  range  skew kurtosis    se
+ mpg    1 19  17.15  3.83  17.30   17.12  3.11 10.40  24.40  14.00  0.01    -0.80  0.88
+ hp     2 19 160.26 53.91 175.00  161.06 77.10 62.00 245.00 183.00 -0.01    -1.21 12.37
+ wt     3 19   3.77  0.78   3.52    3.75  0.45  2.46   5.42   2.96  0.98     0.14  0.18
+ ------------------------------------------------------------------------------------------- 
+ am: 1
+     vars  n   mean    sd median trimmed   mad   min    max  range skew kurtosis    se
+ mpg    1 13  24.39  6.17  22.80   24.38  6.67 15.00  33.90  18.90 0.05    -1.46  1.71
+ hp     2 13 126.85 84.06 109.00  114.73 63.75 52.00 335.00 283.00 1.36     0.56 23.31
+ wt     3 13   2.41  0.62   2.32    2.39  0.68  1.51   3.57   2.06 0.21    -1.17  0.17
+ ```
