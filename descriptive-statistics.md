@@ -63,3 +63,47 @@ wt     3 32   3.22  0.98   3.33    3.15  0.77  1.51   5.42   3.91 0.42    -0.02 
 ```
 > Hmisc::describe(mtcars[vars])
 ```
+* **aggregate()** : only allows single-value functions
+
+ * by=list(am=mtcars$am) : use am as label
+ * by=list(mtcars$am) : use Group.1 as label
+ ```
+ > aggregate(mtcars[vars],by=list(am=mtcars$am),mean)
+   am      mpg       hp       wt
+ 1  0 17.14737 160.2632 3.768895
+ 2  1 24.39231 126.8462 2.411000
+ > aggregate(mtcars[vars],by=list(mtcars$am),sd)
+   Group.1      mpg       hp        wt
+ 1       0 3.833966 53.90820 0.7774001
+ 2       1 6.166504 84.06232 0.6169816
+ ```
+* **by()**
+ ```
+ > mystats <- function(x,na.omit=FALSE){
+ + if(na.omit)
+ + x <- x[!is.na(x)]
+ + m <- mean(x)
+ + n <- length(x)
+ + s <- sd(x)
+ + skew <- sum((x-m)^3/s^3)/n
+ + kurt <- sum((x-m)^4/s^4)/n-3
+ + return(c(n=n,mean=m,stdev=s,skew=skew,kurtosis=kurt))
+ + }
+ > dstats <- function(x)sapply(x,mystats)
+ > by(mtcars[vars],mtcars$am,dstats)
+ mtcars$am: 0
+                  mpg           hp         wt
+ n        19.00000000  19.00000000 19.0000000
+ mean     17.14736842 160.26315789  3.7688947
+ stdev     3.83396639  53.90819573  0.7774001
+ skew      0.01395038  -0.01422519  0.9759294
+ kurtosis -0.80317826  -1.20969733  0.1415676
+ ------------------------------------------------------------------------------------------- 
+ mtcars$am: 1
+                  mpg          hp         wt
+ n        13.00000000  13.0000000 13.0000000
+ mean     24.39230769 126.8461538  2.4110000
+ stdev     6.16650381  84.0623243  0.6169816
+ skew      0.05256118   1.3598859  0.2103128
+ kurtosis -1.45535200   0.5634635 -1.1737358
+ ```
