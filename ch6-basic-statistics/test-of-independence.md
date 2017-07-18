@@ -2,7 +2,8 @@
 
 * **chisq tests**
 
-p<0.01, we reject the hypothesis that treatment type and outcome are independent. Therefore, there appears to be a relationship between treatment received and level of improvement.
+p`<`0.01, we reject the hypothesis that treatment type and outcome are independent. Therefore, there appears to be a relationship between treatment received and level of improvement.
+
 ```
 > mytable
          Improved
@@ -18,7 +19,7 @@ X-squared = 13.055, df = 2, p-value = 0.001463
 
 > mytable <- xtabs(~Improved+Sex,data=Arthritis)
 ```
-p<0.05, we accept the hypothesis that outcome and gender are independent. 
+p`<`0.05, we accept the hypothesis that outcome and gender are independent. 
 ```
 > mytable
         Sex
