@@ -14,4 +14,3 @@ $out
 numeric(0)
 ```
 ![](/ch5-basic-graphs/box plot.PNG)
-
