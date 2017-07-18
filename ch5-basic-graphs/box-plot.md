@@ -27,4 +27,8 @@ varwidth=TRUE : produces box plots with widths that are proportional to their sa
 > boxplot(mpg~cyl,data=mtcars,notch=TRUE,varwidth=TRUE,col="red",main="Car mileage data",xlab="number of cylinders",ylab="miles per gallon")
 ```
 ![](/ch5-basic-graphs/notched box plot.PNG)
-
+* **box plot for two crossed factors**
+```
+> boxplot(mpg~am.f*cyl.f,data=mtcars,varwidth=TRUE,col=c("gold","darkgreen"),main="mpg distribution by auto type",xlab="auto type",ylab="miles per gallon")
+```
+![](/ch5-basic-graphs/boxplotcrossedf.PNG)
