@@ -39,4 +39,6 @@
   * [Box plot](ch5-basic-graphs/box-plot.md)
   * [Violin plot](ch5-basic-graphs/violin-plot.md)
   * [Dot plot](ch5-basic-graphs/dot-plot.md)
+* Ch6 Basic Statistics
+  * [Descriptive statistics](descriptive-statistics.md)
 
