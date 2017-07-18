@@ -20,4 +20,11 @@ numeric(0)
 boxplot(mpg~cyl,data=mtcars,main="Car mileage data",xlab="number of cylinders",ylab="miles per gallon")
 ```
 ![](/ch5-basic-graphs/parallelboxplot.PNG)
+* **notched box plot**
+
+varwidth=TRUE : produces box plots with widths that are proportional to their sample sizes.
+```
+> boxplot(mpg~cyl,data=mtcars,notch=TRUE,varwidth=TRUE,col="red",main="Car mileage data",xlab="number of cylinders",ylab="miles per gallon")
+```
+![](/ch5-basic-graphs/notched box plot.PNG)
 
