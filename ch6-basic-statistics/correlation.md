@@ -48,5 +48,58 @@ Illiteracy -0.58847793  0.7029752
 HS Grad     0.58221620 -0.4879710
 ```
 
+* **cor.test\(\)**
+
+The null hypothesis is that the correlation between Illiteracy and Murder is 0. 
+
+p-value = 1.258e-08&lt;0.01, therefore, we reject the null hypothesis, that is, the correlation is not 0.
+
+```
+> cor.test(states[,3],states[,5])
+
+	Pearson's product-moment correlation
+
+data:  states[, 3] and states[, 5]
+t = 6.8479, df = 48, p-value = 1.258e-08
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ 0.5279280 0.8207295
+sample estimates:
+      cor 
+0.7029752 
+```
+
+* corr.test\(\)
+  * use = "complete" : listwise deletion of missing value
+  * use = "pairwise" : pairwise deletion of missing value
+
+  The correlation between population size and high school gradudation rate \(-0.10\) is not significantly different from 0 \(p=0.50\) 
+
+```
+> library(psych)
+> corr.test(states,use="complete")
+Call:corr.test(x = states, use = "complete")
+Correlation matrix 
+           Population Income Illiteracy Life Exp Murder HS Grad
+Population       1.00   0.21       0.11    -0.07   0.34   -0.10
+Income           0.21   1.00      -0.44     0.34  -0.23    0.62
+Illiteracy       0.11  -0.44       1.00    -0.59   0.70   -0.66
+Life Exp        -0.07   0.34      -0.59     1.00  -0.78    0.58
+Murder           0.34  -0.23       0.70    -0.78   1.00   -0.49
+HS Grad         -0.10   0.62      -0.66     0.58  -0.49    1.00
+Sample Size 
+[1] 50
+Probability values (Entries above the diagonal are adjusted for multiple tests.) 
+           Population Income Illiteracy Life Exp Murder HS Grad
+Population       0.00   0.59       1.00      1.0   0.10       1
+Income           0.15   0.00       0.01      0.1   0.54       0
+Illiteracy       0.46   0.00       0.00      0.0   0.00       0
+Life Exp         0.64   0.02       0.00      0.0   0.00       0
+Murder           0.01   0.11       0.00      0.0   0.00       0
+HS Grad          0.50   0.00       0.00      0.0   0.00       0
+
+ To see confidence intervals of the correlations, print with the short=FALSE option
+```
+
 
 
