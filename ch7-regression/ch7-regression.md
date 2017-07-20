@@ -124,6 +124,36 @@ Frost       -0.54      -0.33      -0.67   0.23  1.00
 ![](/ch7-regression/scatterplotmatrix.PNG)
 
 * **Multiple linear regression**
+  * the regression coefficient for illiteracy is 4.14, sugguesting that an increase of 1% in illiteracy is associated with a 4.14% increase in the murder rate, controlling for other variables.
+  * the coefficient for illiteracy is significantly different from zero at the p&lt;0.0001 level
+  * the coefficient for frost isn't significantly different from zero \(p=0.954\), suggesting that frost and murder rate aren't linearly related when controlling for the other variables.
+  * the predictor variables account for 56.7% of the variance in murder rates.
+
+```
+> fit <- lm(Murder~.,data=states)
+> summary(fit)
+
+Call:
+lm(formula = Murder ~ ., data = states)
+
+Residuals:
+   Min     1Q Median     3Q    Max 
+-4.796 -1.649 -0.081  1.482  7.621 
+
+Coefficients:
+            Estimate Std. Error t value Pr(>|t|)    
+(Intercept) 1.23e+00   3.87e+00    0.32    0.751    
+Population  2.24e-04   9.05e-05    2.47    0.017 *  
+Illiteracy  4.14e+00   8.74e-01    4.74  2.2e-05 ***
+Income      6.44e-05   6.84e-04    0.09    0.925    
+Frost       5.81e-04   1.01e-02    0.06    0.954    
+---
+Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
+
+Residual standard error: 2.5 on 45 degrees of freedom
+Multiple R-squared:  0.567,	Adjusted R-squared:  0.528 
+F-statistic: 14.7 on 4 and 45 DF,  p-value: 9.13e-08
+```
 
 
 
