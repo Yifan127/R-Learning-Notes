@@ -14,6 +14,7 @@
   * Multiple linear regression
 
 * **Simple Linear regression**
+
   * weight hat = -87.51667+3.45000\*height
   * regression coeffient \(3.45\) is significantly different from zero\(p&lt;0.001\) and indicates that there's an expected increase of 3.45 pounds of weight for every 1 inch increase in height.
   * the multiple R-squared indicates that the model accounts for 99.1% of the variance in weight. It is also the squared correlation between the actual and predicted value.
@@ -56,6 +57,7 @@ F-statistic:  1433 on 1 and 13 DF,  p-value: 1.091e-14
 ```
 
 * **Polynomial regression**
+
   * weight hat = 261.87818-7.34832\*height+0.08306\*height^2
   * the amount of variance accounted for has increased to 99.9%
 
@@ -88,5 +90,16 @@ F-statistic: 1.139e+04 on 2 and 12 DF,  p-value: < 2.2e-16
 > lines(women$height,fitted(fit2))
 ```
 
+* **scatterplot\(\)**
+  * scatter plot of weight with height
+  * box plots for each variable
+  * the linear line of best fit
+  * a smoothed fit line \(dashed line\)
 
+```
+> library(car)
+> scatterplot(weight~height,data=women,spread=FALSE,smoother.args=list(lty=2),pch=19,main="women age 30-39",xlab="height",ylab="weight")
+```
+
+![](/ch7-regression/scatterplot.PNG)
 
