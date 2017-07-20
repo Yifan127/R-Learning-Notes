@@ -12,7 +12,11 @@
   * Residuals vs Fitted: should not have any special patterns. In the graph, there's a clear evidence of a curved relationship, which suggests that we may want to add a quadratic term to the regression.
   * Scale-Location: the points should be a random band around a horizontal line.![](/ch7-regression/plotfit.PNG)
 
-  * 
+* **qqPlot\(\)**
+
+```
+> qqPlot(fit,labels = row.names(states),id.method = "identify",simulate = TRUE,main="Q-Q Plot")
+```
 
 
 
