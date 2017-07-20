@@ -2,10 +2,10 @@
 
 * **Assumptions**
 
-  * Normality
+  * Normality - QQplot
   * Independence
-  * Linearity
-  * Constant variance
+  * Linearity - Residuals vs. fitted value
+  * Constant variance - Scale-location
 
 * **Models**
 
@@ -151,7 +151,7 @@ Frost       5.81e-04   1.01e-02    0.06    0.954
 Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
 
 Residual standard error: 2.5 on 45 degrees of freedom
-Multiple R-squared:  0.567,	Adjusted R-squared:  0.528 
+Multiple R-squared:  0.567,    Adjusted R-squared:  0.528 
 F-statistic: 14.7 on 4 and 45 DF,  p-value: 9.13e-08
 ```
 
