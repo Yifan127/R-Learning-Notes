@@ -103,3 +103,23 @@ F-statistic: 1.139e+04 on 2 and 12 DF,  p-value: < 2.2e-16
 
 ![](/ch7-regression/scatterplot.PNG)
 
+* **Examing bivariate relationships**
+
+```
+> options(digits = 2)
+> cor(states)
+           Murder Population Illiteracy Income Frost
+Murder       1.00       0.34       0.70  -0.23 -0.54
+Population   0.34       1.00       0.11   0.21 -0.33
+Illiteracy   0.70       0.11       1.00  -0.44 -0.67
+Income      -0.23       0.21      -0.44   1.00  0.23
+Frost       -0.54      -0.33      -0.67   0.23  1.00
+> scatterplotMatrix(states,spread = FALSE,smoother.args = list(lty=2),main="Scatter plot matrix")
+```
+
+* **Multiple linear regression**
+
+
+
+
+
