@@ -1,15 +1,18 @@
 ### Regression
 
 * **Assumptions**
+
   * Normality
   * Independence
   * Linearity
   * Constant variance
 
 * **Models**
+
   * Simple linear regression
   * Polynomial regression
   * Multiple linear regression
+
 * **Simple Linear regression**
   * weight hat = -87.51667+3.45000\*height
   * regression coeffient \(3.45\) is significantly different from zero\(p&lt;0.001\) and indicates that there's an expected increase of 3.45 pounds of weight for every 1 inch increase in height.
@@ -35,7 +38,7 @@ height        3.45000    0.09114   37.85 1.09e-14 ***
 Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
 
 Residual standard error: 1.525 on 13 degrees of freedom
-Multiple R-squared:  0.991,	Adjusted R-squared:  0.9903 
+Multiple R-squared:  0.991,    Adjusted R-squared:  0.9903 
 F-statistic:  1433 on 1 and 13 DF,  p-value: 1.091e-14
 
 > fitted(fit)
@@ -54,7 +57,9 @@ F-statistic:  1433 on 1 and 13 DF,  p-value: 1.091e-14
 
 * **Polynomial regression**
   * weight hat = 261.87818-7.34832\*height+0.08306\*height^2
-  * 
+  * the amount of variance accounted for has increased to 99.9%
+
+  * the significance of the squared term\(t=13.891,p&lt;0.001\) suggests that the inclusion of the quadratic term improves the model fit.
 
 ```
 > fit2 <- lm(weight~height+I(height^2),data=women)
@@ -76,7 +81,7 @@ I(height^2)   0.08306    0.00598  13.891 9.32e-09 ***
 Signif. codes:  0 ¡®***¡¯ 0.001 ¡®**¡¯ 0.01 ¡®*¡¯ 0.05 ¡®.¡¯ 0.1 ¡® ¡¯ 1
 
 Residual standard error: 0.3841 on 12 degrees of freedom
-Multiple R-squared:  0.9995,	Adjusted R-squared:  0.9994 
+Multiple R-squared:  0.9995,    Adjusted R-squared:  0.9994 
 F-statistic: 1.139e+04 on 2 and 12 DF,  p-value: < 2.2e-16
 
 > plot(women$height,women$weight,xlab="height",ylab="weight")
