@@ -104,6 +104,10 @@ F-statistic: 1.139e+04 on 2 and 12 DF,  p-value: < 2.2e-16
 ![](/ch7-regression/scatterplot.PNG)
 
 * **Examing bivariate relationships**
+  * **scatterplotMatrix**
+  * murder rate may be bimodal and each of the predictor variables is skewed to some extent
+  * murder rates rise with population and illiteracy, and they fall with higher income and frost.
+  * colder states have lower illiteracy rates and population and higher incomes.
 
 ```
 > options(digits = 2)
@@ -117,9 +121,9 @@ Frost       -0.54      -0.33      -0.67   0.23  1.00
 > scatterplotMatrix(states,spread = FALSE,smoother.args = list(lty=2),main="Scatter plot matrix")
 ```
 
+![](/ch7-regression/scatterplotmatrix.PNG)
+
 * **Multiple linear regression**
-
-
 
 
 
