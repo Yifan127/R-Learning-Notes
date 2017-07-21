@@ -39,5 +39,5 @@ Nevada 3.542929         0.00095088     0.047544
 > abline(h=cutoff,col="red",lty=2)
 ```
 
-
+![](/ch7-regression/cookd.PNG)
 
