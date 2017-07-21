@@ -10,7 +10,8 @@ Nevada 3.542929         0.00095088     0.047544
 ```
 
 * **High-leverage points**
-  * the average hat value:p/n where p: the number of parameters, n is the sample size.
+  * they have an unusal combination of predictor values. The response value isn't involved in determining leverage. For example, Alaska has a much higher income than other states, while having a lower population and temperature.
+* * the average hat value:p/n where p: the number of parameters, n is the sample size.
   * an observation with a hat value greater than 2 or 3 times the average hat value should be examined.
 
 ```
@@ -25,6 +26,8 @@ Nevada 3.542929         0.00095088     0.047544
 + }
 > hat.plot(fit)
 ```
+
+![](/ch7-regression/highleverage.PNG)
 
 * **Influential observations**
 
