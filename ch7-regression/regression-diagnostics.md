@@ -14,11 +14,12 @@
 * **qqPlot\(\)**
 
   * id.method="identify" makes the plot interactive- clicking on points will add a label.
+  * Nevada is an exception, all other points fall close to the line.
 
 ```
 > library(car)
 > qqPlot(fit,labels = row.names(states),id.method = "identify",simulate = TRUE,main="Q-Q Plot")
 ```
 
-
+![](/ch7-regression/qqPlot.PNG)
 
