@@ -46,5 +46,9 @@ Nevada 3.542929         0.00095088     0.047544
 > avPlots(fit,ask=FALSE,id.method="identify")
 ```
 
+* **avPlots: assessing the impact of inflential observations**
+  * the straight line in each plot is the actual regression coefficient for that predictor variable.
+  * for example, look at the graph in the lower-left corner. Eliminating the point labeled Alaska would move the line in a negative direction, which changes the regression coefficient for Income from 0.00006 to -0.00085![](/ch7-regression/avplot.PNG)
+
 
 
