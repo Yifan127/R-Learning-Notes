@@ -37,5 +37,5 @@
 > residplot(fit)
 ```
 
-
+![](/ch7-regression/residualplot.PNG)
 
