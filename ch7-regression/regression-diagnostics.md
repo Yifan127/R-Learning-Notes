@@ -47,3 +47,32 @@
 
 ![](/ch7-regression/crplot.PNG)
 
+* **ncvTest\(\)** : check constant variance
+  * null hypothesis: constant error variance
+  * alternative hypothesis: error variance changes with the level of the fitted values.
+  * a significant results suggests nonconstant error variance.
+
+```
+> ncvTest(fit)
+Non-constant Variance Score Test 
+Variance formula: ~ fitted.values 
+Chisquare = 1.746514    Df = 1     p = 0.1863156
+```
+
+p=0.19, suggesting that you've met the constant variance aussumption.
+
+* **spreadLevelPlot\(\)** : check the constant variance
+  * the points should form a random horizontal band around a horizontal line of best fit.
+  * the suggested power transformation is the suggested power. 
+    * 0.5: sqrt\(y\)
+    * 0: log\(y\)
+    * 1: no transformation required.
+
+```
+> spreadLevelPlot(fit)
+
+Suggested power transformation:  1.209626 
+```
+
+
+
