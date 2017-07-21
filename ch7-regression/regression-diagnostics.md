@@ -39,3 +39,11 @@
 
 ![](/ch7-regression/residualplot.PNG)
 
+* **crPlots\(\)** : check the linearity
+
+```
+> crPlots(fit)
+```
+
+![](/ch7-regression/crplot.PNG)
+
