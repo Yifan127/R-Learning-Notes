@@ -30,6 +30,15 @@ Nevada 3.542929         0.00095088     0.047544
 ![](/ch7-regression/highleverage.PNG)
 
 * **Influential observations**
+  * they have a disproportionate impact on the values of the model parameters. The model changes dramatically with the removal of a single observation.
+  * Cook's distance, Cook's D values greater than 4/\(n-k-1\), where n is the sample size, k is the number of predictor variables.
+  * 
+
+```
+> cutoff <- 4/(nrow(states)-length(coefficients(fit))-2)
+> plot(fit,which = 4,cook.levels = cutoff)
+> abline(h=cutoff,col="red",lty=2)
+```
 
 
 
