@@ -72,10 +72,19 @@ lm(formula = Murder ~ Population + Illiteracy, data = states)
 
 Coefficients:
 (Intercept)   Population   Illiteracy  
-  1.6515497    0.0002242    4.0807366 
+  1.6515497    0.0002242    4.0807366
 ```
 
 * * all-subsets regression
+    * regsubsets\(\)
+    * choose R-squared, adjusted R-squared, or Cp statistic as criterion
+    * 
+
+```
+> library(leaps)
+> leaps <- regsubsets(Murder~.,data=states,nbest=4)
+> plot(leaps,scale = "adjr2")
+```
 
 
 
