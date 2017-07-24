@@ -78,7 +78,7 @@ Coefficients:
 * * all-subsets regression
     * regsubsets\(\)
     * choose R-squared, adjusted R-squared, or Cp statistic as criterion
-    * 
+    * Looking at the 12th row, a model with the intercept, population, illiteracy, and income has an adjusted R-squared of 0.54, whereas one with the intercept, population, and illiteracy alone has a larger adusted R-squared of 0.55. Hence, the two-predictor model is the best.
 
 ```
 > library(leaps)
@@ -86,5 +86,5 @@ Coefficients:
 > plot(leaps,scale = "adjr2")
 ```
 
-
+![](/ch7-regression/adjr2.PNG)
 
