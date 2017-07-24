@@ -93,9 +93,8 @@ Coefficients:
 > abline(1,1,lty=2,col="red")
 ```
 
-
-
-
+* better models will fall close to a line with intercept 1 and slope1.
+* the plot suggests that a two-predictor model with population and illiteracy can be considered.![](/ch7-regression/subsets.PNG)
 
 
 
