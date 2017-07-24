@@ -88,3 +88,14 @@ Coefficients:
 
 ![](/ch7-regression/adjr2.PNG)
 
+```
+> subsets(leaps, statistic = "cp",main="cp plot for all subsets regression")
+> abline(1,1,lty=2,col="red")
+```
+
+
+
+
+
+
+
