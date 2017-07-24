@@ -30,6 +30,52 @@ fit2  4 237.6565
 ```
 
 * **variable selection**
+  * stepwise regression
+    * variables are added to or deleted from a model one at a time, until some stopping criterion is reached.
+    * forward stepwise: add predictor variables.
+    * backward stepwise: start with a model that includes all predictor variables, and then delete them one at a time.
+    * not every possible model is evaluated. 
+
+```
+> library(MASS)
+> fit <- lm(Murder~.,data = states)
+> stepAIC(fit,direction = "backward")
+Start:  AIC=97.75
+Murder ~ Population + Illiteracy + Income + Frost
+
+             Df Sum of Sq    RSS     AIC
+- Frost       1     0.021 289.19  95.753
+- Income      1     0.057 289.22  95.759
+<none>                    289.17  97.749
+- Population  1    39.238 328.41 102.111
+- Illiteracy  1   144.264 433.43 115.986
+
+Step:  AIC=95.75
+Murder ~ Population + Illiteracy + Income
+
+             Df Sum of Sq    RSS     AIC
+- Income      1     0.057 289.25  93.763
+<none>                    289.19  95.753
+- Population  1    43.658 332.85 100.783
+- Illiteracy  1   236.196 525.38 123.605
+
+Step:  AIC=93.76
+Murder ~ Population + Illiteracy
+
+             Df Sum of Sq    RSS     AIC
+<none>                    289.25  93.763
+- Population  1    48.517 337.76  99.516
+- Illiteracy  1   299.646 588.89 127.311
+
+Call:
+lm(formula = Murder ~ Population + Illiteracy, data = states)
+
+Coefficients:
+(Intercept)   Population   Illiteracy  
+  1.6515497    0.0002242    4.0807366 
+```
+
+* * all-subsets regression
 
 
 
